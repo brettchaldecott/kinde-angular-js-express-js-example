@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>My AngularJS App</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Main navigation -->
+  <nav>
+    <ul>
+      <li><a href="/login">Login</a></li>
+      <li><a href="#!/">Public Section</a></li>
+      <li><a href="#!/secure">Secure Section</a></li>
+    </ul>
+  </nav>
+
+  <!-- This is where AngularJS will inject the different templates (public.html, secure.html) based on the route -->
+  <div ng-view></div>
+</body>
+</html>
